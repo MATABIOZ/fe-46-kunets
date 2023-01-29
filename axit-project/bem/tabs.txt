@@ -1,0 +1,15 @@
+.tabs
+	.container
+		.tabs__wrapper
+		
+			.tabs__list
+				.tabs__list-tab
+			
+			.tabs__content
+				.tabs__content-wrapper
+					.tabs__info
+						.tabs__title
+						.tabs__description
+						.tabs__download
+				
+					.tabs__image
