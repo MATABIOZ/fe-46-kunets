@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/* Ты одновременно задал боди два шрифта, выбери один основной */
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -12,7 +13,7 @@ body {
 
 .container {
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #FFFFFF; /* Зачем? */
 }
 
 .divider {
@@ -213,10 +214,12 @@ body {
 	text-decoration: none;
 }
 
+/* Ты готовишься к SCSS? :) */
 .__list-tab_empty {
 	padding: 0;
 }
 
+/* Ты готовишься к SCSS? :) Почему такой класс?*/
 .__list-tab_active {
 	border: 1px solid #C6CBCD;
 	border-bottom: 1px solid #FFFFFF !important;
@@ -289,7 +292,7 @@ body {
 .tabs__download {
 	width: 100%;
 }
-
+/* Добавь стилизацию курсора */
 .tabs__download button{
 	max-width: 270px;
 	width: 100%;
@@ -383,6 +386,8 @@ body {
 	text-align: center;
 	justify-content: center;
 }
+
+/* Ты готовишься к SCSS? :) Что за названия классов? */
 
 .__image_lightbulb {
 	width: 66px;
