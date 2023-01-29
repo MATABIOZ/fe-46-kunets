@@ -1,0 +1,16 @@
+1. .pricing
+2. .container
+3. .pricing__wrapper
+
+	.pricing__header
+		.pricing__title
+		.divider
+		.pricing__descriptoin
+	
+	.pricing__tariffs
+		.tariff
+			.tariff__options-wrapper
+			.tariff__title
+			.tariff__price
+			.tariff__description
+			.tariff__advantages
