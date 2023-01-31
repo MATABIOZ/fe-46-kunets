@@ -7,9 +7,9 @@
 			
 			.tabs__content
 				.tabs__content-wrapper
-					.tabs__info
-						.tabs__title
-						.tabs__description
-						.tabs__download
+					.info
+						.info__title
+						.info__description
+						.info__download
 				
 					.tabs__image

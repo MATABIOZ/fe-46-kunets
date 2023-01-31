@@ -3,7 +3,6 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -12,7 +11,6 @@ body {
 
 .container {
 	width: 100%;
-	background-color: #FFFFFF;
 }
 
 .divider {
@@ -22,16 +20,69 @@ body {
 }
 
 
+/** info */
+
+
+.info {
+	padding: 0 30px 0 100px;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+}
+
+.info__title {
+	padding: 41px 0;
+	width: 100%;
+}
+
+.info__title h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.info__description {
+	padding: 27px 0;
+	width: 100%;
+}
+
+.info__description h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.info__download {
+	width: 100%;
+	padding-bottom: 54px;
+}
+
+.info__download button {
+	max-width: 270px;
+	width: 100%;
+	height: 58px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FFFFFF;
+	background: #EC7979;
+	border: none;
+	cursor: pointer;
+}
+
+.info__download button:active {
+	-webkit-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+	-moz-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+	box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+}
 /** .card */
 
 
 .card {
 	max-width: 400px;
 	padding: 0 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
 }
 
 .card__image {
@@ -40,7 +91,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 }
 
 .card__image-wrapper {
@@ -48,9 +98,8 @@ body {
 	height: 92px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
 	justify-content: center;
+	align-items: center;
 	border: 1px solid #EC7979;
 	border-radius: 100%;
 }
@@ -61,11 +110,10 @@ body {
 }
 
 .card__title h4 {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	line-height: 34px;
 	font-weight: 700;
 	font-size: 24px;
-	color: #000000;
 }
 
 .card__description {
@@ -74,11 +122,9 @@ body {
 }
 
 .card__description h5 {
-	font-family: 'Raleway';
 	line-height: 22px;
 	font-weight: 400;
 	font-size: 18px;
-	color: #000000;
 }
 
 
@@ -90,10 +136,6 @@ body {
 	max-width: 400px;
 	width: 100%;
 	padding: 40px 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
 	transition: all ease-in-out 0.5s;
 }
 
@@ -111,7 +153,7 @@ body {
 }
 
 .tariff__title h4 {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 34px;
@@ -126,7 +168,6 @@ body {
 }
 
 .tariff__price h3 {
-	font-family: 'Raleway';
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 42px;
@@ -141,7 +182,6 @@ body {
 }
 
 .tariff__description h5 {
-	font-family: 'Raleway';
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
@@ -156,7 +196,6 @@ body {
 .tariff__advantages li {
 	padding: 14px 0;
 	border: 2px solid #F5F5F5;
-	font-family: 'Raleway';
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
@@ -185,39 +224,32 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
-	align-items: flex-end;
 	text-align: center;
 }
 
 .tabs__list-tab li {
 	padding: 10px 0;
-	max-width: 195px;
+	max-width: 200px;
 	width: 100%;
-	font-family: 'Open Sans';
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 20px;
-	text-transform: uppercase;
-	color: #333333;
 	border-bottom: 1px solid #C6CBCD;
 }
 
 .tabs__list-tab a {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+	text-decoration: none;
 	text-transform: uppercase;
 	color: #333333;
-	text-decoration: none;
 }
 
-.__list-tab_empty {
-	padding: 0;
+.tabs__list-tab_border {
+	border-bottom: 1px solid #C6CBCD;
+	max-width: 570px;
+	width: 100%;
 }
-
-.__list-tab_active {
+.tabs__list-tab_active {
 	border: 1px solid #C6CBCD;
 	border-bottom: 1px solid #FFFFFF !important;
 	border-radius: 7px 7px 0 0;
@@ -246,75 +278,15 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
 	align-items: flex-start;
-	text-align: left;
 	border: 1px solid #C6CBCD;
-	border-top: 1px solid #FFFFFF;
-}
-
-.tabs__info {
-	padding: 0 30px 0 100px;
-	max-width: 700px;
-	display: flex;
-	flex-direction: column;
-}
-
-.tabs__title {
-	padding: 41px 0;
-	width: 100%;
-}
-
-.tabs__title h3 {
-	font-family: 'Open Sans';
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 42px;
-	color: #000000;
-}
-
-.tabs__description {
-	padding: 27px 0;
-	width: 100%;
-}
-
-.tabs__description h5 {
-	font-family: 'Raleway';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 22px;
-	color: #000000;
-}
-
-.tabs__download {
-	width: 100%;
-}
-
-.tabs__download button{
-	max-width: 270px;
-	width: 100%;
-	height: 58px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 26px;
-	text-transform: capitalize;
-	color: #FFFFFF;
-	background: #EC7979;
-	border: none;
-}
-
-.tabs__download button:active {
-	-webkit-box-shadow: 0px 4px 6px 1px rgba(204,204,204,1);
-	-moz-box-shadow: 0px 4px 6px 1px rgba(204,204,204,1);
-	box-shadow: 0px 4px 6px 1px rgba(204,204,204,1);
+	border-top: none;
 }
 
 .tabs__image {
 	max-width: 470px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: flex-end;
 }
 
@@ -350,11 +322,9 @@ body {
 }
 
 .about__title h2 {
-	font-family: 'Raleway';
 	line-height: 42px;
 	font-weight: 400;
 	font-size: 36px;
-	color: #000000;
 }
 
 .about__description {
@@ -363,7 +333,6 @@ body {
 }
 
 .about__description h5 {
-	font-family: 'Raleway';
 	line-height: 22px;
 	font-weight: 400;
 	font-size: 18px;
@@ -379,22 +348,22 @@ body {
 	padding: 31px 0;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: flex-start;
 	text-align: center;
-	justify-content: center;
 }
 
-.__image_lightbulb {
+.card__image_lightbulb {
 	width: 66px;
 	height: 66px;
 }
 
-.__image_keyboard {
+.card__image_keyboard {
 	width: 66px;
 	height: 46px;
 }
 
-.__image_lightning {
+.card__image_lightning {
 	width: 44px;
 	height: 66px;
 }
@@ -432,11 +401,9 @@ body {
 }
 
 .pricing__title h2 {
-	font-family: 'Raleway';
 	line-height: 42px;
 	font-weight: 400;
 	font-size: 36px;
-	color: #000000;
 	text-transform: uppercase;
 }
 
@@ -446,7 +413,6 @@ body {
 }
 
 .pricing__description h5 {
-	font-family: 'Raleway';
 	line-height: 22px;
 	font-weight: 400;
 	font-size: 18px;
@@ -461,9 +427,9 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: flex-start;
 	text-align: center;
-	justify-content: center;
 }
 
 .pricing__tariffs .tariff:hover {
