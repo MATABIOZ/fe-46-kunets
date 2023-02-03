@@ -1,0 +1,27 @@
+/* ! section .tabs */
+
+.tabs {
+	padding: 0 15px;
+}
+
+.tabs__wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+
+/** .tabs__list */
+
+
+.tabs__list {
+	margin-bottom: -1px;
+	padding: 100px 0 0;
+	width: 100%;
+}
+
+.tabs__list-tab {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+}

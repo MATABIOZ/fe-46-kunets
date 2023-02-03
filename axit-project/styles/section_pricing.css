@@ -1,0 +1,72 @@
+/*! section .pricing */
+
+
+.pricing__container {
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+.pricing__wrapper {
+	max-width: 1200px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+
+/** .pricing__header */
+
+
+.pricing__header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.pricing__title {
+	width: 100%;
+	padding: 54px 15px;
+}
+
+.pricing__title h2 {
+	line-height: 42px;
+	font-weight: 400;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.pricing__description {
+	width: 100%;
+	padding: 40px 15px;
+}
+
+.pricing__description h5 {
+	line-height: 22px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #86878B;
+}
+
+
+/** .pricing__tariffs */
+
+
+.pricing__tariffs {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+}
+
+.pricing__tariffs .tariff:hover {
+	padding: 20px 0 60px;
+}
+
+.pricing__tariffs .tariff__options-wrapper:hover {
+	-webkit-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+	-moz-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+	box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+}

@@ -4,12 +4,14 @@
 		
 			.tabs__list
 				.tabs__list-tab
+					.tab
+						.tab__radio
+						.tab__title
 			
-			.tabs__content
-				.tabs__content-wrapper
-					.info
-						.info__title
-						.info__description
-						.info__download
+			.content
+				.info
+					.info__title
+					.info__description
+					.info__download
 				
-					.tabs__image
+				.content__image
