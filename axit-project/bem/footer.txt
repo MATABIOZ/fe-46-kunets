@@ -1,0 +1,7 @@
+.footer
+	.container
+		.footer__wrapper
+		
+			.footer__partners
+				.partners-logo
+			.footer__info

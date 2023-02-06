@@ -1,0 +1,12 @@
+.contact
+	.container
+		.contact__wrapper
+			
+			.contact__header
+				.contact__title
+				.divider
+				.contact__description
+			
+			.contact__form-group
+				.form
+				.contact__form-button

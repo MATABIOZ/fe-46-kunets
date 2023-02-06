@@ -1,16 +1,15 @@
- 1.	.about
- 2.	.container
- 3.	.wrapper
- 
- 4.		.about__header
- 5.   		.about__title
- 6.   		.divider
- 7.   		.about__descriotion
- 
- 8.  	.about__cards
- 9.   		.card
-10.    			.card__image
-11.     			.card__image-wrapper
-12.    			.card__title
-13.    			.card__descripton
- 
+.about
+.container
+.wrapper
+	
+	.about__header
+		.about__title
+		.divider
+		.about__descriotion
+
+	.about__cards
+		.card
+			.card__image
+			.card__image-wrapper
+			.card__title
+			.card__descripton
