@@ -1,0 +1,81 @@
+.second-banner {
+	width: 100%;
+}
+
+.second-banner__wrapper {
+	margin: 0 auto;
+	max-width: 1510px;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/banner-2_bg.jpg);
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: color;
+}
+
+.second-banner__inner {
+	margin: 0 auto;
+	padding: 50px 0 17px;
+	max-width: 1170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.second-banner__title {
+	padding: 54px 0;
+	width: 100%;
+}
+
+.second-banner__title h2 {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.second-banner__description {
+	padding: 40px 0;
+	width: 100%;
+}
+
+.second-banner__description h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+
+}
+
+.second-banner__download {
+	width: 100%;
+	padding: 33px 0;
+}
+
+.second-banner__download button {
+	padding: 0;
+	width: 370px;
+	height: 58px;
+	background: none;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+.second-banner__download button:hover {
+	color: #EC7979;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.second-banner__download button:active {
+	border: 2px solid #EC7979;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #EC7979;
+}

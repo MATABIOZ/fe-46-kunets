@@ -1,0 +1,38 @@
+.footer {
+	background-color: black;
+}
+
+.container {
+	width: 100%;
+}
+
+.footer__wrapper {
+	margin: 0 auto;
+	padding-top: 35px;
+	max-width: 1170px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: center;
+}
+
+.footer__partners {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.footer__info {
+	padding: 27px 0;
+	width: 100%;
+}
+
+.footer__info h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}

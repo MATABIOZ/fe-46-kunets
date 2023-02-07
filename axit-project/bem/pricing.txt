@@ -1,11 +1,11 @@
-1. .pricing
-2. .container
-3. .pricing__wrapper
+.pricing
+.container
+.pricing__wrapper
 
 	.pricing__header
 		.pricing__title
 		.divider
-		.pricing__descriptoin
+		.pricing__description
 	
 	.pricing__tariffs
 		.tariff
