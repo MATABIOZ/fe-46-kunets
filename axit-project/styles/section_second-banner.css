@@ -1,8 +1,8 @@
-.banner-2 {
+.second-banner {
 	width: 100%;
 }
 
-.banner-2__container {
+.second-banner__wrapper {
 	margin: 0 auto;
 	max-width: 1510px;
 	background-position: center;
@@ -12,7 +12,7 @@
 	background-blend-mode: color;
 }
 
-.banner-2__wrapper {
+.second-banner__inner {
 	margin: 0 auto;
 	padding: 50px 0 17px;
 	max-width: 1170px;
@@ -22,12 +22,12 @@
 	text-align: center;
 }
 
-.banner-2__title {
+.second-banner__title {
 	padding: 54px 0;
 	width: 100%;
 }
 
-.banner-2__title h2 {
+.second-banner__title h2 {
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 42px;
@@ -35,12 +35,12 @@
 	color: #FFFFFF;
 }
 
-.banner-2__description {
+.second-banner__description {
 	padding: 40px 0;
 	width: 100%;
 }
 
-.banner-2__description h5 {
+.second-banner__description h5 {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -48,12 +48,12 @@
 
 }
 
-.banner-2__download {
+.second-banner__download {
 	width: 100%;
 	padding: 33px 0;
 }
 
-.banner-2__download button {
+.second-banner__download button {
 	padding: 0;
 	width: 370px;
 	height: 58px;
@@ -61,29 +61,21 @@
 	border: 2px solid #FFFFFF;
 	cursor: pointer;
 	transition: all ease-in-out 0.2s;
-}
 
-.banner-2__download button:active {
-	border: 2px solid #EC7979;
-}
-
-.banner-2__download p {
-	padding: 14px 0;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 26px;
 	text-transform: capitalize;
 	color: #FFFFFF;
-	transition: all ease-in-out 0.2s;
 }
 
-.banner-2__download p:hover {
-	text-transform: capitalize;
+.second-banner__download button:hover {
 	color: #EC7979;
 	text-shadow: 1px 1px 1px #FFFFFF;
 }
 
-.banner-2__download p:active {
+.second-banner__download button:active {
+	border: 2px solid #EC7979;
 	color: #FFFFFF;
 	text-shadow: 1px 1px 1px #EC7979;
 }

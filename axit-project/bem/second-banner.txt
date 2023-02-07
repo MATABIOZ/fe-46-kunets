@@ -1,0 +1,8 @@
+.second-banner
+	.container
+		.second-banner__wrapper
+			.second-banner__inner
+				.second-banner__title
+				.divider .divider_white
+				.second-banner__description
+				.second-banner__download

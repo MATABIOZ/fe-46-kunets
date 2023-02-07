@@ -1,7 +1,0 @@
-.banner-2
-	.banner-2__container
-		.banner-2__wrapper
-			.banner-2__title
-			.divider .divider_white
-			.banner-2__description
-			.banner-2__download

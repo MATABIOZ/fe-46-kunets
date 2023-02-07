@@ -9,4 +9,5 @@
 			
 			.contact__form-group
 				.form
-				.contact__form-button
+					.form__elements
+					.contact__form-button
