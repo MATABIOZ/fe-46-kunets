@@ -1,0 +1,16 @@
+.reviews
+	.container
+		.reviews__wrapper
+			
+			.reviews__header
+				.reviews__title
+				.divider divider_red
+				.reviews__description
+			
+			.reviews__cards
+				.card
+					.card__review
+					.card__reviewer
+						.card__reviewer-avatar
+						.card__reviewer-name
+						.card__reviewer-profession
