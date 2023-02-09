@@ -2,9 +2,13 @@
 
 @import url(./styles/main.css);
 
+@import url(./styles/section_header.css);
+@import url(./styles/section_first-banner.css);
+@import url(./styles/section_social.css);
 @import url(./styles/section_tabs.css);
 @import url(./styles/section_about.css);
 @import url(./styles/section_pricing.css);
+@import url(./styles/section_reviews.css);
 @import url(./styles/section_second-banner.css);
 @import url(./styles/section_contact.css);
 @import url(./styles/section_footer.css);
