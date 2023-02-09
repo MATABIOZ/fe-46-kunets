@@ -6,6 +6,7 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .social__content {
@@ -46,4 +47,5 @@
 .social__partners {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
