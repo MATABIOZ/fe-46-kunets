@@ -2,11 +2,11 @@
 	background-color: #000000;
 	position: sticky;
 	top: 0;
+	z-index: 2;
 }
 
 .header__wrapper {
 	margin: 0 auto;
-	padding: 1px 0;
 	max-width: 1310px;
 }
 
@@ -19,9 +19,7 @@
 }
 
 .header__axit-logo {
-	margin-right: 15px;
-	display: flex;
-	align-items: center;
+	flex-shrink: 0;
 }
 
 .header__logo-item {
@@ -29,7 +27,7 @@
 }
 
 .header__nav-menu {
-	max-width: 1124px;
+	max-width: 1048px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -38,14 +36,14 @@
 	flex-grow: 1;
 }
 
-.header__nav-link {
+.header__nav-item {
 	padding: 28px 15px;
 	max-width: 114px;
 	height: 100%;
 	flex-grow: 1;
 }
 
-.header__nav-link a {
+.header__nav-item a {
 	text-decoration: none;
 
 	font-family: 'Open Sans', sans-serif;
@@ -56,6 +54,6 @@
 	color: #FFFFFF;
 }
 
-.header__nav-link a:active {
+.header__nav-item a:active {
 	color: #EC7979;
 }

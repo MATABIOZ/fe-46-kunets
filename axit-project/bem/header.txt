@@ -4,8 +4,5 @@
 			.header__inner
 			
 				.header__axit-logo
-					.header__logo-item
-					.header__logo-item
-				
 				.header__nav-menu
-					.header__nav-link
+					.header__nav-item
