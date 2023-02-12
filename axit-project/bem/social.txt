@@ -1,0 +1,10 @@
+.social
+	.container
+		.social__wrapper
+			
+			.social__content
+				.social__title
+				.social__description
+			
+			.social__partners
+				.partners-logo_big

@@ -3,5 +3,5 @@
 		.footer__wrapper
 		
 			.footer__partners
-				.partners-logo
+				.partners-logo partners-logo_small
 			.footer__info

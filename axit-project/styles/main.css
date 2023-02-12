@@ -27,6 +27,78 @@ body {
 	background-color: #FFFFFF;
 }
 
+
+/** .axure-template */
+
+
+.axure-template {
+	padding-bottom: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.axure-template__logo {
+	width: 100%;
+}
+
+.axure-template__title {
+	padding: 51px 0 56px;
+	width: 100%;
+}
+
+.axure-template__title h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.axure-template__description {
+	padding: 42px 0;
+	max-width: 270px;
+}
+
+.axure-template__description h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.axure-template__button {
+	max-width: 270px;
+}
+
+.axure-template__button button {
+	width: 100%;
+	min-height: 58px;
+	border: 2px solid #FFFFFF;
+	background: none;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+.axure-template__button button:hover {
+	color: #EC7979;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.axure-template__button button:active {
+	border: 2px solid #EC7979;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #EC7979;
+}
+
+
 /** .tab */
 
 
@@ -159,6 +231,7 @@ body {
 .card {
 	max-width: 400px;
 	padding: 0 15px;
+	flex-grow: 1;
 }
 
 .card__image {
@@ -201,6 +274,73 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	font-size: 18px;
+}
+
+.card__review {
+	padding: 38px 0;
+	width: 100%;
+	text-align: center;
+	background-color: #E2E2E2;
+	border-radius: 10px;
+	position: relative;
+}
+
+.card__review::after {
+	content: ''; 
+	position: absolute;
+	left: 18%;
+	bottom: -35px;
+	border: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+}
+
+.card__review h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+	white-space: pre-line;
+}
+
+.card__reviewer {
+	width: 100%;
+	max-height: 202px;
+	display: flex;
+}
+
+.card__reviewer-avatar {
+	padding-top: 66px;
+	min-width: 70px;
+}
+
+.card__reviewer-info {
+	padding: 66px 0 31px 30px;
+	max-width: 300px;
+	flex-grow: 1;
+}
+
+.card__reviewer-name {
+	padding: 10px 0;
+	width: 100%;
+}
+
+.card__reviewer-name h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: capitalize;
+}
+
+.card__reviewer-profession {
+	padding: 15px 0;
+	width: 100%;
+}
+
+.card__reviewer-profession h5{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 
@@ -303,7 +443,112 @@ body {
 	line-height: 19px;
 }
 
+.form__elements_short {
+	max-width: 370px;
+}
+
+.form__title {
+	padding: 28px 0;
+	width: 100%;
+}
+
+.form__title h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+
+.form__title span {
+	color: #EC7979;
+}
+
+
+/** .partners-logo */
+
 
 .partners-logo {
+	position: relative;
+}
+
+.partners-logo_big {
+	padding: 18px 15px;
+	
+}
+
+.partners-logo_big img{
+	outline: 8px solid #f8efef;
+	border-radius: 20%;
+}
+
+.partners-logo_big img:hover {
+	filter: brightness(0);
+	outline: 8px solid #f8efef;
+	border-radius: 20%;
+	transition: all ease-in-out 0.5s;
+}
+
+.partners-logo_big img:active {
+	filter: brightness(0) invert(50%);
+	outline: 8px solid #f8efef;
+	border-radius: 20%;
+	transition: all ease-in-out 0.5s;
+}
+
+.partners-logo_big a::after {
+	margin: 0 auto;
+	content: attr(aria-label);
+	position: absolute;
+	top: -9px;
+	left: 8px;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #000000;
+	opacity: 0;
+}
+
+.partners-logo_big a:hover::after {
+	opacity: 1;
+}
+
+.partners-logo_small {
 	padding: 0 22px;
+}
+
+.partners-logo_small img{
+	outline: 6px solid #000000;
+	border-radius: 20%;
+}
+
+.partners-logo_small img:hover {
+	filter: brightness(0) invert(100%);
+	outline: 6px solid #000000;
+	border-radius: 20%;
+	transition: all ease-in-out 0.5s;
+}
+
+.partners-logo_small img:active {
+	filter: brightness(0) invert(50%);
+	outline: 6px solid #000000;
+	border-radius: 20%;
+	transition: all ease-in-out 0.5s;
+}
+
+.partners-logo_small a::after {
+	margin: 0 auto;
+	content: attr(aria-label);
+	position: absolute;
+	top: -25px;
+	left: 16px;
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: capitalize;
+	color: #ffffff;
+	opacity: 0;
+}
+
+.partners-logo_small a:hover::after {
+	opacity: 1;
 }

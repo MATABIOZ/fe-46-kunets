@@ -1,0 +1,20 @@
+.first-banner
+	.container
+		.first-banner__wrapper
+			.first-banner__inner
+			
+				.first-banner__axure-template
+					.axure-template
+						.axure-template__logo
+							.axure-template__logo-item
+							.axure-template__logo-item
+						.axure-template__title
+						.divider .divider_white
+						.axure-template__description
+						.axure-template__button
+				
+				.first-banner__form-group
+					.form
+						.form__title
+						.form__elements .form__elements_short
+						.first-banner__form-button

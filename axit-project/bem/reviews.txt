@@ -12,5 +12,6 @@
 					.card__review
 					.card__reviewer
 						.card__reviewer-avatar
-						.card__reviewer-name
-						.card__reviewer-profession
+						.card__reviewer-info
+							.card__reviewer-name
+							.card__reviewer-profession
