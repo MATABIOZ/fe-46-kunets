@@ -11,10 +11,9 @@
 .first-banner__inner {
 	margin: 0 auto;
 	padding-top: 283px;
-	padding-bottom: 127px;
+	padding-bottom: 135px;
 	max-width: 1200px;
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .first-banner__axure-template {
@@ -24,16 +23,15 @@
 
 .first-banner__form-group {
 	margin: 0 15px;
-	/* padding-top: 6px; */
 	max-width: 470px;
-	max-height: 465px;
+	max-height: 441px;
 	flex-grow: 1;
 	background-color: #FFFFFF;
 	border-radius: 10px;
 }
 
 .first-banner__form-group input {
-	margin-top: 29px;
+	margin-top: 17px;
 	min-height: 51px;
 	outline: none;
 	border: none;
@@ -47,6 +45,8 @@
 .first-banner__form-button {
 	width: 100%;
 	padding-top: 75px;
+	display: flex;
+	justify-content: center;
 }
 
 .first-banner__form-button button {
@@ -72,4 +72,38 @@
 	-webkit-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
 	-moz-box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
 	box-shadow: 0px 4px 6px 1px rgba(204, 204, 204, 1);
+}
+
+
+@media screen and (max-width:1024px) {
+	.first-banner__inner {
+		padding-bottom: 82px;
+	}
+	.first-banner__axure-template {
+		padding-left: 116px;
+		padding-right: 18px;
+		max-width: 588px;
+	}
+	.first-banner__form-group {
+		max-width: 398px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.first-banner__inner {
+		padding: 40px 6px 50px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.first-banner__axure-template {
+		padding: 44px 10px 0;
+	}
+	.first-banner__form-group {
+		margin: 0 10px;
+		max-width: 288px;
+	}
+	.first-banner__form-button {
+		padding-top: 51px;
+	}
 }

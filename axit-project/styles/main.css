@@ -28,6 +28,60 @@ body {
 }
 
 
+/** .sidebar */
+
+
+.sidebar {
+	display: none;
+}
+
+.sidebar.sidebar_checked {
+	position: fixed;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #000000;
+	max-width: 320px;
+	padding-bottom: 24px;
+	transition: all ease-in-out 0.5s;
+	animation: myAnim 0.5s cubic-bezier(0.5, 0, 0.75, 0) 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.sidebar__nav-item {
+	padding: 24px 0;
+	width: 320px;
+}
+
+.sidebar__nav-item a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: all ease-in-out 0.5s;
+}
+
+.sidebar__nav-item a:hover {
+	color: #EC7979;
+}
+
+
 /** .axure-template */
 
 
@@ -68,11 +122,12 @@ body {
 }
 
 .axure-template__button {
-	max-width: 270px;
+	width: 100%;
+	display: flex;
 }
 
 .axure-template__button button {
-	width: 100%;
+	width: 270px;
 	min-height: 58px;
 	border: 2px solid #FFFFFF;
 	background: none;
@@ -100,7 +155,6 @@ body {
 
 
 /** .tab */
-
 
 .tab {
 	max-width: 200px;
@@ -149,6 +203,7 @@ body {
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 	border: 1px solid #C6CBCD;
 }
 
@@ -168,7 +223,7 @@ body {
 
 
 .info {
-	padding: 0 30px 0 100px;
+	padding-left: 100px;
 	max-width: 700px;
 	display: flex;
 	flex-direction: column;
@@ -201,6 +256,8 @@ body {
 .info__download {
 	width: 100%;
 	padding-bottom: 42px;
+	display: flex;
+	justify-content: center;
 }
 
 .info__download button {
@@ -274,10 +331,11 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	font-size: 18px;
+	white-space: pre-line;
 }
 
 .card__review {
-	padding: 38px 0;
+	padding: 38px 20px;
 	width: 100%;
 	text-align: center;
 	background-color: #E2E2E2;
@@ -349,7 +407,7 @@ body {
 
 .tariff {
 	margin: 0 15px;
-	max-width: 400px;
+	max-width: 370px;
 	width: 100%;
 	padding: 40px 0px;
 	transition: all ease-in-out 0.5s;
@@ -419,6 +477,24 @@ body {
 }
 
 
+/** .slider */
+
+
+.slider {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.slider__wrapper {
+	width: 100%;
+}
+
+.slider__control {
+	display: none;
+}
+
+
 /** .form */
 
 
@@ -444,6 +520,7 @@ body {
 }
 
 .form__elements_short {
+	padding-top: 12px;
 	max-width: 370px;
 }
 
@@ -458,6 +535,7 @@ body {
 	font-size: 24px;
 	line-height: 34px;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .form__title span {
@@ -474,12 +552,13 @@ body {
 
 .partners-logo_big {
 	padding: 18px 15px;
-	
 }
 
 .partners-logo_big img{
 	outline: 8px solid #f8efef;
 	border-radius: 20%;
+	max-width: 75px;
+	max-height: 75px;
 }
 
 .partners-logo_big img:hover {
@@ -514,7 +593,7 @@ body {
 }
 
 .partners-logo_small {
-	padding: 0 22px;
+	padding: 0 19px;
 }
 
 .partners-logo_small img{
@@ -551,4 +630,462 @@ body {
 
 .partners-logo_small a:hover::after {
 	opacity: 1;
+}
+
+
+@media screen and (max-width:1024px) {
+	.divider {
+		width: 142px;
+	}
+	.divider_short-white {
+		width: 116px;
+	}
+
+
+	.axure-template__logo {
+		max-width: 183px;
+		max-height: 75px;
+	}
+	.axure-template__title {
+		padding: 38px 0 42px;
+	}
+	.axure-template__title h1 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.axure-template__description {
+		padding: 30px 0;
+	}
+	.axure-template__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.axure-template__button button {
+		max-height: 50px;
+		width: 183px;
+	}
+
+
+	.form__elements_short {
+		max-width: 298px;
+	}
+	.form__title {
+		padding: 32px 0;
+		width: 100%;
+	}
+	.form__title h4 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+
+	.partners-logo_big {
+		padding: 25px 10px 16px;
+	}
+	.partners-logo_big img {
+		max-width: 64px;
+		max-height: 64px;
+	}
+	.partners-logo_big a::after {
+		top: 1px;
+		left: 2px;
+	}
+
+
+	.tab {
+		max-width: 172px;
+	}
+
+
+	.content__image img {
+		width: 398px;
+		height: 385px;
+	}
+
+
+	.info {
+		padding-left: 85px;
+		max-width: 594px;
+	}
+	.info__title {
+		padding: 28px 0;
+		width: 100%;
+	}
+	.info__title h3 {
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.info__description {
+		padding: 38px 0;
+	}
+	.info__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.info__download {
+		padding-bottom: 50px;
+	}
+	.info__download button {
+		max-width: 232px;
+	}
+
+
+	.card {
+		max-width: 338px;
+		padding: 0 10px;
+		flex-grow: 1;
+	}
+	.card__image {
+		width: 100%;
+		padding: 34px 0;
+	}
+	.card__image-wrapper {
+		width: 80px;
+		height: 80px;
+	}
+	.card__title {
+		width: 100%;
+		padding: 28px 0;
+	}
+	.card__title h4 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.card__description {
+		width: 100%;
+		padding: 9px 0;
+	}
+	.card__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+
+	.tariff {
+		margin: 0 10px;
+		max-width: 317px;
+		padding: 18px 0px;
+	}
+	.tariff__title {
+		padding: 10px 0;
+	}
+	.tariff__price {
+		padding: 23px 0;
+	}
+	.tariff__description {
+		padding: 11px 0;
+	}
+	.tariff__advantages li {
+		padding: 11px 0;
+	}
+
+
+	.card__review {
+		padding: 50px 20px;
+	}
+	.card__review::after {
+		bottom: -33px;
+		border: 13px solid transparent;
+		border-top: 20px solid #E2E2E2;
+	}
+	.card__review h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.card__reviewer {
+		max-height: 186px;
+	}
+	.card__reviewer-avatar {
+		padding: 66px 0 57px;
+		min-width: 63px;
+	}
+	.card__reviewer-avatar img{
+		width: 63px;
+		height: 63px;
+	}
+	.card__reviewer-info {
+		padding: 66px 0 50px 22px;
+		max-width: 255px;
+	}
+	.card__reviewer-name {
+		padding: 5px 0;
+	}
+	.card__reviewer-name h4 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.card__reviewer-profession {
+		padding: 9px 0;
+	}
+	.card__reviewer-profession h5{
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+
+	.partners-logo_small {
+		padding: 0 17px 8px;
+	}
+	.partners-logo_small img{
+		width: 45px;
+		height: 45px;
+	}
+	.partners-logo_small a::after {
+		left: 11px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.divider {
+		width: 134px;
+	}
+	.divider_short-white {
+		width: 134px;
+	}
+
+
+	.axure-template {
+		padding-bottom: 56px;
+		align-items: center;
+		text-align: center;
+	}
+	.axure-template__logo {
+		display: none;
+	}
+	.axure-template__title {
+		padding: 44px 0;
+	}
+	.axure-template__description {
+		padding: 42px 0;
+	}
+	.axure-template__button {
+		justify-content: center;
+		max-width: 288px;
+	}
+	.axure-template__button button {
+		width: 100%;
+	}
+
+
+	.form__elements_short {
+		max-width: 240px;
+		padding-top: 0;
+	}
+	.form__title {
+		padding: 35px 0 2px;
+	}
+	.form__title h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+
+	.partners-logo_big {
+		padding: 19px 8px 0;
+	}
+	.partners-logo_big img {
+		max-width: 26px;
+		max-height: 26px;
+		outline: 5px solid #f8efef;
+	}
+	.partners-logo_big a::after {
+		top: 0;
+		left: 4px;
+		font-size: 9px;
+	}
+	.partners-logo_big img:hover {
+		outline: 5px solid #f8efef;
+	}
+	.partners-logo_big img:active {
+		outline: 5px solid #f8efef;
+	}
+
+
+	.tab {
+		max-width: 96px;
+	}
+	.content {
+		padding: 0 21px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		max-width: 288px;
+	}
+	.content__image {
+		display: none;
+	}
+	.info {
+		padding-left: 0;
+		max-width: 288px;
+	}
+	.info__title {
+		padding: 31px 0;
+	}
+	.info__title h3 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.info__description {
+		padding: 29px 0;
+	}
+	.info__description h5 {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.info__download {
+		padding-bottom: 30px;
+	}
+	.info__download button {
+		max-width: 243px;
+	}
+
+
+	.card {
+		max-width: 308px;
+	}
+
+
+	.tariff {
+		max-width: 288px;
+		padding: 0 0 27px;
+	}
+	.tariff__title {
+		padding: 11px 0;
+	}
+	.tariff__title h4{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.tariff__price {
+		padding: 25px 0;
+	}
+	.tariff__price h3{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.tariff__description {
+		padding: 11px 0;
+	}
+	.tariff__description h5{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.tariff__advantages li {
+		padding: 11px 0;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+
+	.slider__wrapper {
+		width: 308px;
+		overflow: hidden;
+	}
+	.slider__control {
+		padding-bottom: 31px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.slider__control button {
+		margin: 0 25px;
+		padding: 0;
+		width: 10px;
+		height: 10px;
+		background: none;
+		border: 1px solid #86878B;
+		border-radius: 100%;
+		transition: all ease-in-out 0.3s;
+		cursor: pointer;
+	}
+	.slider__control button:hover {
+		background-color: #86878B;
+		border: none;
+	}
+	.slider__button.slider__button_active {
+		background-color: #86878B;
+	}
+
+
+	.card__review {
+		padding: 50px 15px;
+	}
+	.card__review h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.card__reviewer-avatar {
+		padding: 62px 0 0;
+		min-width: 57px;
+	}
+	.card__reviewer-avatar img{
+		width: 57px;
+		height: 57px;
+	}
+	.card__reviewer-info {
+		padding: 66px 0 22px 22px;
+	}
+	.card__reviewer-name {
+		padding: 8px 0;
+	}
+	.card__reviewer-name h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.card__reviewer-profession {
+		padding: 10px 0;
+	}
+	.card__reviewer-profession h5{
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+
+	.form {
+		max-width: 486px;
+	}
+	.form__elements {
+		max-height: 100%;
+	}
+
+
+	.partners-logo_small {
+		padding: 0 8px;
+	}
+	.partners-logo_small img {
+		max-width: 26px;
+		max-height: 26px;
+		outline: 5px solid #000000;
+	}
+	.partners-logo_small a::after {
+		top: -20px;
+		left: 3px;
+		font-size: 9px;
+	}
+	.partners-logo_small img:hover {
+		outline: 5px solid #000000;
+	}
+	.partners-logo_small img:active {
+		outline: 5px solid #000000;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.sidebar.sidebar_checked {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 280px) {
+	.axure-template__title h1 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.form__title h4 {
+		white-space: pre-line;
+	}
 }

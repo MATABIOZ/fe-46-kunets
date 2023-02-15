@@ -51,6 +51,8 @@
 .second-banner__download {
 	width: 100%;
 	padding: 33px 0;
+	display: flex;
+	justify-content: center;
 }
 
 .second-banner__download button {
@@ -78,4 +80,52 @@
 	border: 2px solid #EC7979;
 	color: #FFFFFF;
 	text-shadow: 1px 1px 1px #EC7979;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.second-banner__inner {
+		padding: 50px 6px;
+	}
+
+	.second-banner__title {
+		padding: 46px 10px;
+	}
+	.second-banner__title h2 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.second-banner__description {
+		padding: 32px 10px;
+	}
+	.second-banner__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.second-banner__download {
+		padding: 0;
+	}
+	.second-banner__download button {
+		width: 318px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.second-banner__inner {
+		padding: 0 6px 6px;
+	}
+
+	.second-banner__title {
+		padding: 46px 10px;
+	}
+	.second-banner__description {
+		padding: 16px 10px;
+	}
+	.second-banner__download {
+		padding: 50px 10px;
+	}
+	.second-banner__download button {
+		width: 287px;
+	}
 }

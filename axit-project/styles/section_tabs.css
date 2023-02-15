@@ -14,7 +14,7 @@
 
 
 .tabs__list {
-	margin-bottom: -1px;
+	margin-bottom: -2px;
 	padding: 100px 0 0;
 	width: 100%;
 }
@@ -24,4 +24,27 @@
 	display: flex;
 	align-items: flex-end;
 	text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.tabs {
+		padding: 0 16px;
+	}
+	.tabs__list {
+		padding-top: 50px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.tabs__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.tabs__list {
+		padding-top: 41px;
+		max-width: 288px;
+	}
 }

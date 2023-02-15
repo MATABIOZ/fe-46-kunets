@@ -2,6 +2,9 @@
 	margin: 0 auto;
 	padding-top: 50px;
 	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .reviews__header {
@@ -42,5 +45,59 @@
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.reviews__wrapper {
+		padding: 0 6px;
+	}
+
+	.reviews__title {
+		padding: 46px 10px;
+	}
+	.reviews__title h2 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.reviews__description {
+		padding: 32px 10px;
+	}
+	.reviews__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.reviews__cards {
+		padding: 0;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.reviews__wrapper {
+		padding: 0 6px;
+	}
+
+	.reviews__title {
+		padding: 32px 10px;
+	}
+	.reviews__description {
+		padding: 24px 10px;
+	}
+
+	.reviews__cards {
+		min-width: 924px;
+		transition: all ease-in-out 0.5s;
+		transform: translateX(-308px);
+	}
+	.reviews__cards.reviews__cards_left {
+		transform: translateX(0);
+	}
+	.reviews__cards.reviews__cards_center {
+		transform: translateX(-308px);
+	}
+	.reviews__cards.reviews__cards_right {
+		transform: translateX(-616px);
+	}
 }

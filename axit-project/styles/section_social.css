@@ -6,7 +6,6 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .social__content {
@@ -47,5 +46,47 @@
 .social__partners {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.social__wrapper {
+		padding: 0 6px;
+	}
+	.social__content {
+		padding: 0 10px;
+	}
+	.social__title {
+		padding: 10px 0;
+	}
+	.social__title h4 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.social__description {
+		padding: 13px 0;
+		max-width: 402px;
+	}
+	.social__description h5 {
+		font-size: 14px;
+		line-height: 16px
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.social__wrapper {
+		padding: 31px 6px 44px;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.social__description h5 {
+		white-space: pre-line;
+	}
+	.social__partners {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
