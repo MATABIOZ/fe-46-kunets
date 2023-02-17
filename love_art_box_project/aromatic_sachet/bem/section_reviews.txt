@@ -1,0 +1,14 @@
+.reviews
+	.container
+		.reviews__wrapper
+		
+			.review-form
+				.review-form__title
+				.review-form__review
+				.review-form__reviewer-info
+				.review-form__buttons
+					.review-form__button
+					.review-form__checkbox
+						.review-form__hidden-checkbox
+						.review-form__fake-checkbox
+						.review-form__checkbox-text

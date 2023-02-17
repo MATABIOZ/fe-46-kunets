@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Love Art Box</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<section class="reviews">
+		<div class="container">
+			<div class="reviews__wrapper">
+				<form class="review-form">
+					<div class="review-form__title">
+						<h3>Оставьте свой отзыв на “Ароматическое саше”</h3>
+					</div>
+					<div class="review-form__review">
+						<textarea name="review" placeholder="Ваш отзыв*" required></textarea>
+					</div>
+					<div class="review-form__reviewer-info">
+						<input type="text" name="name" placeholder="Имя*" required>
+						<input type="tel" name="phone_number" placeholder="Телефон*" required>
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="review-form__buttons">
+						<div class="review-form__button">
+							<button type="submit">Отправить</button>
+						</div>
+						<div class="review-form__checkbox">
+							<input id="save" class="review-form__hidden-checkbox" type="checkbox" name="save">
+							<label for="save"><span class="review-form__fake-checkbox icon-checkbox"></span></label>
+							<label class="review-form__checkbox-text" for="save">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
