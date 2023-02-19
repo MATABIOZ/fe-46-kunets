@@ -114,10 +114,10 @@
 	.pricing__tariffs {
 		padding-bottom: 0;
 		flex-direction: column;
-		justify-content: flex-start;
 		align-items: center;
 	}
 	.pricing__tariffs .tariff:hover {
 		padding: 0 0 27px;
+		transform: scale(1.02);
 	}
 }

@@ -1,4 +1,5 @@
-.social {
+.social__container {
+	width: 100%;
 	background-color: #f8efef;
 }
 
@@ -76,7 +77,7 @@
 
 @media screen and (max-width: 768px) {
 	.social__wrapper {
-		padding: 31px 6px 44px;
+		padding: 31px 0 44px;
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;

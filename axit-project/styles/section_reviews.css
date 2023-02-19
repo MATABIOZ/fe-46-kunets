@@ -91,13 +91,4 @@
 		transition: all ease-in-out 0.5s;
 		transform: translateX(-308px);
 	}
-	.reviews__cards.reviews__cards_left {
-		transform: translateX(0);
-	}
-	.reviews__cards.reviews__cards_center {
-		transform: translateX(-308px);
-	}
-	.reviews__cards.reviews__cards_right {
-		transform: translateX(-616px);
-	}
 }

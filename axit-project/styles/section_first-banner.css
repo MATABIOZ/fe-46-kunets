@@ -1,6 +1,6 @@
 .first-banner__wrapper {
 	margin: 0 auto;
-	max-width: 1510px;
+	width: 100%;
 	background-position: center;
 	background-size: cover;
 	background-image: url(../images/banner-1_bg.jpg);
@@ -31,8 +31,8 @@
 }
 
 .first-banner__form-group input {
-	margin-top: 17px;
 	min-height: 51px;
+	margin: 17px 50px 0;
 	outline: none;
 	border: none;
 	border-bottom: 1px solid #BDBDBD;
@@ -101,7 +101,10 @@
 	}
 	.first-banner__form-group {
 		margin: 0 10px;
-		max-width: 288px;
+		max-width: 298px;
+	}
+	.first-banner__form-group input {
+		margin: 17px 20px 0;
 	}
 	.first-banner__form-button {
 		padding-top: 51px;

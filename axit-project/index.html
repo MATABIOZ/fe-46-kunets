@@ -14,7 +14,7 @@
 			<div class="header__wrapper">
 				<div class="header__inner">
 					<div class="header__axit-logo">
-						<a href="#first-banner" onclick="location.href='#first-banner';"><img src="./images/axit-logo.png" alt="axit"></a>
+						<a href="#first-banner"><img src="./images/axit-logo.png" alt="axit"></a>
 					</div>
 					<nav class="header__nav-menu">
 						<div class="header__nav-item"><a href="#features">Features</a></div>
@@ -34,11 +34,11 @@
 			</div>
 		</div>
 		<aside class="sidebar">
-			<div class="sidebar__nav-item"><a href="#features" onclick="location.href='#features';">Features</a></div>
-			<div class="sidebar__nav-item"><a href="#about" onclick="location.href='#about';">About</a></div>
-			<div class="sidebar__nav-item"><a href="#pricing" onclick="location.href='#pricing';">Pricing</a></div>
-			<div class="sidebar__nav-item"><a href="#reviews" onclick="location.href='#reviews';">Reviews</a></div>
-			<div class="sidebar__nav-item"><a href="#contact" onclick="location.href='#contact';">Contact</a></div>
+			<div class="sidebar__nav-item"><a href="#features">Features</a></div>
+			<div class="sidebar__nav-item"><a href="#about">About</a></div>
+			<div class="sidebar__nav-item"><a href="#pricing">Pricing</a></div>
+			<div class="sidebar__nav-item"><a href="#reviews">Reviews</a></div>
+			<div class="sidebar__nav-item"><a href="#contact">Contact</a></div>
 		</aside>
 	</header>
 	<section class="first-banner" id="first-banner">
@@ -72,7 +72,7 @@
 		</div>
 	</section>
 	<section class="social">
-		<div class="container">
+		<div class="social__container">
 			<div class="social__wrapper">
 				<div class="social__content">
 					<div class="social__title"><h4>Social Media</h4></div>
@@ -82,13 +82,13 @@
 					</div>
 				</div>
 				<div class="social__partners">
-					<div class="partners-logo partners-logo_big"><a href="https://www.facebook.com/" aria-label="facebook"><img src="./images/facebook_big-icon.png" alt="facebook"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://twitter.com/" aria-label="twitter"><img src="./images/twitter_big-icon.png" alt="twitter"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://www.linkedin.com/" aria-label="linkedin"><img src="./images/linkedin_big-icon.png" alt="linkedin"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://www.pinterest.com/" aria-label="pinterest"><img src="./images/pinterest_big-icon.png" alt="pinterest"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://www.instagram.com/" aria-label="instagram"><img src="./images/instagram_big-icon.png" alt="instagram"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://github.com/" aria-label="github"><img src="./images/github_big-icon.png" alt="github"></a></div>
-					<div class="partners-logo partners-logo_big"><a href="https://rss.com/" aria-label="rss"><img src="./images/rss_big-icon.png" alt="rss"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://www.facebook.com/" aria-label="facebook" target="_blank"><img src="./images/facebook_big-icon.png" alt="facebook"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://twitter.com/" aria-label="twitter" target="_blank"><img src="./images/twitter_big-icon.png" alt="twitter"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"><img src="./images/linkedin_big-icon.png" alt="linkedin"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://www.pinterest.com/" aria-label="pinterest" target="_blank"><img src="./images/pinterest_big-icon.png" alt="pinterest"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://www.instagram.com/" aria-label="instagram" target="_blank"><img src="./images/instagram_big-icon.png" alt="instagram"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://github.com/" aria-label="github" target="_blank"><img src="./images/github_big-icon.png" alt="github"></a></div>
+					<div class="partners-logo partners-logo_big"><a href="https://rss.com/" aria-label="rss" target="_blank"><img src="./images/rss_big-icon.png" alt="rss"></a></div>
 				</div>
 			</div>
 		</div>
@@ -293,9 +293,9 @@
 						</div>
 					</div>
 					<div class="slider__control">
-						<button class="slider__button" type="button"></button>
-						<button class="slider__button slider__button_active" type="button"></button>
-						<button class="slider__button" type="button"></button>
+						<button class="slider__button" data-position="0" type="button"></button>
+						<button class="slider__button slider__button_active" data-position="-308px" type="button"></button>
+						<button class="slider__button" data-position="-616px" type="button"></button>
 					</div>
 				</div>
 			</div>
@@ -335,10 +335,10 @@
 				<div class="contact__form-group">
 					<form class="form">
 						<div class="form__elements">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email">
-						<input type="password" placeholder="Password">
-						<textarea name="message" placeholder="Message" form="contact-form"></textarea>
+							<input type="text" placeholder="Name">
+							<input type="email" placeholder="Email">
+							<input type="password" placeholder="Password">
+							<textarea name="message" placeholder="Message"></textarea>
 						</div>
 						<div class="contact__form-button">
 							<button type="submit">Send Message</button>
@@ -353,25 +353,25 @@
 			<div class="footer__wrapper">
 				<div class="footer__partners">
 					<div class="partners-logo partners-logo_small">
-						<a href="https://www.facebook.com/" aria-label="facebook"><img src="./images/facebook_icon.png" alt="facebook"></a>
+						<a href="https://www.facebook.com/" aria-label="facebook" target="_blank"><img src="./images/facebook_icon.png" alt="facebook"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://twitter.com/" aria-label="twitter"><img src="./images/twitter_icon.png" alt="twitter"></a>
+						<a href="https://twitter.com/" aria-label="twitter" target="_blank"><img src="./images/twitter_icon.png" alt="twitter"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://www.linkedin.com/" aria-label="linkedin"><img src="./images/linkedin_icon.png" alt="linkedin"></a>
+						<a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"><img src="./images/linkedin_icon.png" alt="linkedin"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://www.pinterest.com/" aria-label="pinterest"><img src="./images/pinterest_icon.png" alt="pinterest"></a>
+						<a href="https://www.pinterest.com/" aria-label="pinterest" target="_blank"><img src="./images/pinterest_icon.png" alt="pinterest"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://www.instagram.com/" aria-label="instagram"><img src="./images/instagram_icon.png" alt="instagram"></a>
+						<a href="https://www.instagram.com/" aria-label="instagram" target="_blank"><img src="./images/instagram_icon.png" alt="instagram"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://github.com/" aria-label="github"><img src="./images/github_icon.png" alt="github"></a>
+						<a href="https://github.com/" aria-label="github" target="_blank"><img src="./images/github_icon.png" alt="github"></a>
 					</div>
 					<div class="partners-logo partners-logo_small">
-						<a href="https://rss.com/" aria-label="rss"><img src="./images/rss_icon.png" alt="rss"></a>
+						<a href="https://rss.com/" aria-label="rss" target="_blank"><img src="./images/rss_icon.png" alt="rss"></a>
 					</div>
 				</div>
 				<div class="footer__info">

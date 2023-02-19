@@ -4,7 +4,7 @@
 
 .second-banner__wrapper {
 	margin: 0 auto;
-	max-width: 1510px;
+	width: 100%;
 	background-position: center;
 	background-size: cover;
 	background-image: url(../images/banner-2_bg.jpg);
