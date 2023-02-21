@@ -70,3 +70,66 @@
 	width: 44px;
 	height: 66px;
 }
+
+
+@media screen and (max-width: 1024px) {
+	.about__wrapper {
+		padding: 50px 6px 0;
+	}
+	.about__title {
+		padding: 46px 10px;
+	}
+	.about__title h2 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.about__description {
+		padding: 32px 10px;
+	}
+	.about__description h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.about__cards {
+		padding: 0 0 51px;
+	}
+	.card__image_lightbulb {
+		width: 57px;
+		height: 57px;
+	}
+	.card__image_keyboard {
+		width: 57px;
+		height: 40px;
+	}
+	.card__image_lightning {
+		width: 38px;
+		height: 57px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.about__wrapper {
+		padding: 0 6px;
+	}
+	.about__title {
+		padding: 49px 10px;
+	}
+	.about__title h2 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.about__description {
+		padding: 25px 10px;
+		margin-bottom: 25px;
+	}
+	.about__description h5 {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.about__cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,5 +1,5 @@
 .social
-	.container
+	.social__container
 		.social__wrapper
 			
 			.social__content

@@ -6,3 +6,7 @@
 				.header__axit-logo
 				.header__nav-menu
 					.header__nav-item
+				.header__burger
+
+	.sidebar
+		.sidebar__nav-item
