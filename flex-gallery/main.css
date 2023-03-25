@@ -1,0 +1,95 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Limelight&family=Nixie+One&display=swap');
+
+body {
+	font-family: 'Limelight', cursive;
+	color: #fff;
+	/* color: #000; */
+}
+
+.image-panels {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+
+.panel:nth-child(1) {
+	background-image: url(./images/image_1.jpg);
+}
+.panel:nth-child(2) {
+	background-image: url(./images/image_2.jpg);
+}
+.panel:nth-child(3) {
+	background-image: url(./images/image_3.jpg);
+}	
+.panel:nth-child(4) {
+	background-image: url(./images/image_4.jpg);
+}
+.panel:nth-child(5) {
+	background-image: url(./images/image_5.jpg);
+}
+
+.panel {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #00000090;
+	background-blend-mode: color;
+	flex: 1;
+	transition: all ease-in-out 1s;
+	cursor: pointer;
+}
+
+.panel.panel_checked {
+	flex: 5;
+	background-blend-mode: normal;
+	cursor: auto;
+}
+
+.panel.panel_checked .panel__text h4 {
+	font-size: calc(18px + 26 * ((100vw - 320px) / 1920));
+	transform: translateY(0);
+}
+.panel.panel_checked .panel__text h5 {
+	font-size: calc(18px + 26 * ((100vw - 320px) / 1920));
+	transform: translateY(0);
+}
+
+.panel__text {
+	width: 100%;
+	height: 100%;
+	border: 4px solid #00000030;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-shadow: 1px 0 1px #000, 2px 0 2px #000;
+	transition: all ease-in-out 1s;
+}
+.panel__text h3 {
+	font-size: calc(18px + 26 * ((100vw - 320px) / 1920));
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	transition: all ease-in-out 1s;
+}
+.panel__text h4 {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 0;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+	transform: translateY(-100vh);
+	transition: all ease-in-out 1s;
+}
+.panel__text h5 {
+	font-family: 'Nixie One', cursive;
+	font-size: 0;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+	transform: translateY(100vh);
+	transition: all ease-in-out 1s;
+}
