@@ -151,3 +151,12 @@ let result = ((((reqNum - minusNum) + plusNum) * multNum)/divNum);
 let outputResult = (`(${reqNum} - ${minusNum} + ${plusNum}) * ${multNum} / ${divNum} = ${result}`);
 
 alert(outputResult);
+
+// * Task 3
+
+let stair = '';
+
+while (stair.length < 6) {
+	stair = stair + '#';
+	console.log(stair);
+};
